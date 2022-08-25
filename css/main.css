@@ -107,6 +107,7 @@ header .header .header__content .header__nav .nav-item:hover a {
 .carousel .carousel__top {
   display: flex;
   align-items: center;
+  padding-bottom: 4em;
 }
 .carousel .carousel__top h2 {
   color: #b61984;
@@ -118,7 +119,7 @@ header .header .header__content .header__nav .nav-item:hover a {
   font-size: 3.8rem;
   font-weight: 700;
 }
-.carousel .carousel__top .bg__carousel__bottom {
+.carousel .bg__carousel__bottom {
   position: absolute;
   bottom: 0;
 }

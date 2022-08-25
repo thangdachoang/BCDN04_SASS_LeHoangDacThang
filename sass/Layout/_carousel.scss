@@ -3,6 +3,7 @@
     .carousel__top{
       display: flex;
       align-items: center;
+      padding-bottom: 4em;
 
       h2 {
         @include styleText($color-purple-1, $fs-5, $fw-4);
@@ -12,10 +13,10 @@
         @include styleText($color-black, $fs-8, $fw-5);
       }
       
-      .bg__carousel__bottom {
-          position: absolute;
-          bottom: 0;
-      }
+    }
+    .bg__carousel__bottom {
+        position: absolute;
+        bottom: 0;
     }
     }
 
