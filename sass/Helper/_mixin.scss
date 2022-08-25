@@ -1,0 +1,25 @@
+//style Text
+@mixin styleText($color,$fs,$fw) {
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+@mixin styleBtn($padding,$radius,$bg,$color){
+    padding: $padding;
+    border-radius: $radius;
+    background-color: $bg;
+    color:$color;
+}
+@mixin responsive($screen){
+    @if (map-has-key($map: $breakpoints , $key: $screen)) {
+        //tìm thấy tên màn hình trong danh sách của breakpoints
+        $value: map-get($map: $breakpoints, $key: $screen );
+        @media screen and (max-width: $value) {
+            @content;            
+        }
+    }
+    @else{
+        @warn "sai tên màn hình"
+    }
+}

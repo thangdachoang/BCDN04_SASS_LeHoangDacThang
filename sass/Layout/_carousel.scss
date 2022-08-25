@@ -1,0 +1,28 @@
+.carousel {
+  z-index: 10;
+    .carousel__top{
+      display: flex;
+      align-items: center;
+
+      h2 {
+        @include styleText($color-purple-1, $fs-5, $fw-4);
+
+      }
+      h1 {
+        @include styleText($color-black, $fs-8, $fw-5);
+      }
+      
+      .bg__carousel__bottom {
+          position: absolute;
+          bottom: 0;
+      }
+    }
+    }
+
+  @include responsive("large"){
+    .carousel{
+      .row{
+        margin-top: 2em;
+      }
+    }
+  }

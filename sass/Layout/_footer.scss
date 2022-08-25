@@ -1,0 +1,97 @@
+.footer {
+  background-image: url(../../img/footer_background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 8em 0;
+  .footer__content {
+    .footer__item {
+      padding: 0 40px;
+      .footer__title {
+        margin-bottom: 2em;
+        h5 {
+          @include styleText($color-white, $fs-6, $fw-5);
+        }
+      }
+      .footer__menu {
+        i {
+          color: white;
+        }
+        span {
+          padding-left: 0.8em;
+          @include styleText($color-white, $fs-10, $fw-2);
+        }
+        li {
+          position: relative;
+          list-style: none;
+          line-height: 1;
+          padding: 0.8em 0;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+        li:first-child {
+          padding-top: 0;
+        }
+        a {
+          @include styleText($color-white, $fs-10, $fw-2);
+          text-decoration: none;
+        }
+        .footer__input {
+          margin-top: 45px;
+          padding-bottom: 0.5em;
+          input {
+            color: $color-white;
+            outline: none;
+            width: 100%;
+            background: transparent;
+            line-height: 1;
+            display: block;
+            padding: 1em;
+            border: 1px solid rgba(255,255,255,.1);
+            border-radius: 50px;
+            text-align: center;
+            &::placeholder{
+              color: $color-white;
+            }
+            &:focus{
+              border: 1px solid rgba(255,255,255,1);
+            }
+          }
+        }
+        .footer__summit{
+          .btnTBL{
+            @include styleText($color-black,$fs-9,$fw-4);
+            margin: 0;
+            height: 4em;
+            width: 100%;
+            border: 1px $color-white solid;
+            background-color: $color-white;
+            &:hover{
+              color: $color-white;
+            }
+            &::after{
+              background-color: $color-purple-1;
+            }
+
+          }
+        }
+      }
+      .footer__social {
+        margin-top: 2em;
+        a {
+          padding-right: 1em;
+          i {
+            color: $color-white;
+            transition: 0.5s all;
+          }
+          &:hover i {
+            color: $color-black;
+            transition: 0.5s all;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+
+//color
+$color-purple-1 : #b61984;
+$color-purle-2: #d30b94;
+$color-purple-3: #dcd1f3;
+$color-white: #ffffff;
+$color-black: #000000;
+
+// font-size
+$fs-1: 14px;
+$fs-2: 15px;
+$fs-3: 0.75rem;
+$fs-4: 0.9rem;
+$fs-5: 1.1rem;
+$fs-6: 1.55rem;
+$fs-7: 2.5rem;
+$fs-8: 3.8rem;
+$fs-9: 0.8em;
+$fs-10: 0.9em;
+$fs-11: 1.25em;
+
+//font-weight
+$fw-1: 300;
+$fw-2: 400;
+$fw-3: 500;
+$fw-4: 600;
+$fw-5: 700;
+
+
+//break points
+$breakpoints: (
+    "extra-large": 1200px,
+    "large": 992px,
+    "medium": 768px,
+    "small": 576px
+);

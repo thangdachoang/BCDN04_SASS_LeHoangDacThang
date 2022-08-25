@@ -1,0 +1,122 @@
+.contact {
+  padding-top: 60px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .container {
+    width: 70%;
+    .contact__left {
+      width: 70%;
+      padding: 0 20px;
+      .contact__img {
+        margin-top: 4em;
+        margin-bottom: 2em;
+      }
+    }
+    .contact__right {
+      padding: 0 20px;
+      .contact__form {
+        padding: 0 25px;
+        background-color: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 30px 30px -10px rgb(0 0 0 / 20%);
+        .contact__title {
+          margin-top: 40px;
+          margin-bottom: 50px;
+          h4 {
+            @include styleText($color-black, $fs-7 - 0.5, $fw-5);
+          }
+        }
+        .contact__row {
+          display: flex;
+          padding-bottom: 1em;
+          .contact__name {
+            position: relative;
+            padding-right: 1em;
+            flex: 1 0 50%;
+            max-width: 50%;
+          }
+          .contact__email {
+            flex: 1 0 50%;
+            max-width: 50%;
+            position: relative;
+          }
+        }
+        .contact__select {
+          position: relative;
+          padding-bottom: 1em;
+        }
+        .contact__message {
+          position: relative;
+          textarea {
+            height: 90px;
+            border-radius: 20px;
+          }
+        }
+        .contact__btn {
+          padding: 2em 0;
+          button {
+            padding: 0.4em 3em;
+          }
+          .btnTBL {
+            &:hover {
+              color: $color-purple-1;
+            }
+          }
+        }
+      }
+    }
+  }
+  .contact__input input,
+  select,
+  textarea {
+    width: 100%;
+    position: relative;
+    padding: 1em 0.81em 0.8em 3.5em;
+    font-size: 0.8em;
+    height: 3.7em;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    outline: none;
+    transition: all 0.5s;
+    &:focus {
+      transition: all 0.5s;
+      border: 1px solid rgba(0, 0, 0, 0.3);
+    }
+  }
+  .icon {
+    position: absolute;
+    z-index: 2;
+    top: 0.5em;
+    left: 1em;
+    color: $color-purle-2;
+  }
+  .contact__bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+}
+
+@include responsive("medium") {
+  .contact .container .contact__right .contact__form .contact__row{
+    flex-direction: column;
+    .contact__name{
+      flex: 1 0 100%;
+      max-width: 100%;
+      padding-right: 0;
+      padding-bottom: 1em;
+    }
+    .contact__email{
+      flex: 1 0 100%;
+      max-width: 100%;
+    }
+  } 
+  .contact__btn button {
+    width: 100%;
+  }
+}

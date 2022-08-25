@@ -11,11 +11,14 @@
 @import "./Base/customize";
 
 //Components
-
+@import "./Components/button";
 
 //Layout
-
-
+@import "./Layout/header";
+@import "./Layout/carousel";
+@import "./Layout/team";
+@import "./Layout/contact";
+@import "./Layout/footer"
 //Pages
 
 

@@ -1,0 +1,25 @@
+.btnTBL{
+    position: relative;
+    z-index: 2;
+    @include styleBtn(0.5em 1em,50px,$color-purple-1,$color-white);
+    margin: 6px;
+    border: 1px $color-purple-1 solid;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-color: $color-white;
+        border-radius: 50px;
+        transition: all 0.2s ease;
+        transform: scaleX(0.5) scaleY(0);
+    }
+
+    &:hover::after {
+        transform: scale(1);
+    }
+}
